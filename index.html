@@ -336,9 +336,12 @@
 
 <!-- HERO -->
 <header class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline poster="media/hero-poster.jpg">
+  <video class="hero-video" id="hero-vid-1" autoplay muted playsinline poster="media/hero-poster.jpg" style="transition:opacity 1.5s ease;opacity:1">
     <source src="media/drone2.webm" type="video/webm" />
     <source src="media/drone2.mp4" type="video/mp4" />
+  </video>
+  <video class="hero-video" id="hero-vid-2" muted playsinline style="transition:opacity 1.5s ease;opacity:0">
+    <source src="media/drone1.mp4" type="video/mp4" />
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -932,6 +935,28 @@
 </footer>
 
 <script>
+  // Alternating hero video crossfade
+  const vid1 = document.getElementById('hero-vid-1');
+  const vid2 = document.getElementById('hero-vid-2');
+  let showingFirst = true;
+
+  function crossfadeTo(incoming, outgoing) {
+    incoming.currentTime = 0;
+    incoming.play();
+    incoming.style.opacity = '1';
+    outgoing.style.opacity = '0';
+    setTimeout(() => { outgoing.pause(); outgoing.currentTime = 0; }, 1500);
+  }
+
+  vid1.addEventListener('ended', () => {
+    showingFirst = false;
+    crossfadeTo(vid2, vid1);
+  });
+  vid2.addEventListener('ended', () => {
+    showingFirst = true;
+    crossfadeTo(vid1, vid2);
+  });
+
   document.getElementById('year').textContent = new Date().getFullYear();
   document.getElementById('hamburger').addEventListener('click',()=>{
     document.getElementById('mobile-menu').classList.toggle('open');
