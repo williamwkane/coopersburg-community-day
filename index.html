@@ -256,7 +256,7 @@
     .contact-card{background:rgba(255,255,255,.05);border:1px solid rgba(200,146,42,.2);border-radius:var(--radius);padding:24px 20px;text-align:center}
     .contact-role{font-family:var(--font-ui);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
     .contact-name{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--cream);margin-bottom:10px}
-    .contact-info{font-family:var(--font-ui);font-size:.8rem;color:var(--parchment);line-height:1.8;opacity:.85}
+    .contact-info{font-family:var(--font-ui);font-size:.8rem;color:var(--parchment);line-height:1.8;opacity:.85;word-break:break-word}
     .contact-info a{color:var(--gold-light);transition:color .2s}
     .contact-info a:hover{color:var(--cream)}
     .social-strip{text-align:center;margin-top:48px;padding-top:36px;border-top:1px solid rgba(255,255,255,.1)}
@@ -605,15 +605,10 @@
           <div class="kids-item"><div class="k-icon">💃</div><p>Dance Works Performance</p></div>
         </div>
 
-        <h3 style="margin-top:32px">🗺️ Park Areas</h3>
-        <ul class="strolling-list">
-          <li><span>① Main Entertainment Tent</span><span class="s-time">Stage &amp; seating</span></li>
-          <li><span>② Craft Alley</span><span class="s-time">Artisans &amp; vendors</span></li>
-          <li><span>③ Custom Bikes &amp; Fire Co.</span><span class="s-time">E. Landis St. entrance</span></li>
-          <li><span>④ Historical Society Tent</span><span class="s-time">All day</span></li>
-          <li><span>⑤ Classic &amp; Antique Cars</span><span class="s-time">All day</span></li>
-          <li><span>⑥ Helicopter Display</span><span class="s-time">11:00 AM – 12:00 PM</span></li>
-        </ul>
+        <h3 style="margin-top:32px">🗺️ Park Map</h3>
+        <div style="margin-top:12px;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(200,146,42,.3)">
+          <img src="media/park-map.png" alt="Coopersburg Community Day park map showing numbered areas, restrooms, parking and shuttle" style="width:100%;display:block" loading="lazy" />
+        </div>
 
         <div class="schedule-placeholder">
           <p>📋 The full 2026 schedule will be posted here as soon as it's confirmed — check back or follow us on social media for updates!</p>
@@ -842,7 +837,7 @@
       </div>
       <div>
         <div class="map-embed">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.3!2d-75.3852!3d40.5307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43e6c6c6b7d3b%3A0x1234!2sSouthern+Lehigh+Living+Memorial+Community+Park%2C+Coopersburg%2C+PA!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.0!2d-75.38638!3d40.53018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43ef1234567%3A0x89c43ef1234567!2sSouthern+Lehigh+Living+Memorial+Community+Park!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus&q=Southern+Lehigh+Living+Memorial+Community+Park+Coopersburg+PA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
         </div>
         <p class="map-caption">Southern Lehigh Living Memorial Community Park · E. Fairmount St &amp; Rte. 309, Coopersburg, PA</p>
       </div>
@@ -862,12 +857,22 @@
       <div class="contact-card">
         <div class="contact-role">Event Chair &amp; Community Orgs</div>
         <div class="contact-name">Ben Craig</div>
-        <div class="contact-info"><a href="tel:2158920725">215-892-0725</a><br><a href="mailto:event@CoopersburgCommunityDay.org">event@CCD.org</a><br><a href="mailto:CommunityOrgs@CoopersburgCommunityDay.org">CommunityOrgs@CCD.org</a></div>
+        <div class="contact-info"><a href="tel:2158920725">215-892-0725</a><br><a href="mailto:event@CoopersburgCommunityDay.org">Event@CoopersburgCommunityDay.org</a><br><a href="mailto:CommunityOrgs@CoopersburgCommunityDay.org">CommunityOrgs@CoopersburgCommunityDay.org</a></div>
       </div>
       <div class="contact-card">
         <div class="contact-role">Corporate Sponsorships</div>
         <div class="contact-name">Heather Kulp</div>
-        <div class="contact-info"><a href="tel:2677338896">267-733-8896</a><br><a href="mailto:corpsponsors@CoopersburgCommunityDay.org">corpsponsors@CCD.org</a></div>
+        <div class="contact-info"><a href="tel:2677338896">267-733-8896</a><br><a href="mailto:corpsponsors@CoopersburgCommunityDay.org">CorpSponsors@CoopersburgCommunityDay.org</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-role">Car Show Coordinator</div>
+        <div class="contact-name">Roger Moyer</div>
+        <div class="contact-info"><a href="tel:4845153984">484-515-3984</a><br><a href="mailto:Cars@CoopersburgCommunityDay.org">Cars@CoopersburgCommunityDay.org</a></div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-role">Craft Vendor Coordinator</div>
+        <div class="contact-name">Ivy Straka</div>
+        <div class="contact-info"><a href="tel:4846610559">484-661-0559</a><br><a href="mailto:Crafts@CoopersburgCommunityDay.org">Crafts@CoopersburgCommunityDay.org</a></div>
       </div>
       <div class="contact-card">
         <div class="contact-role">Web &amp; Social Media</div>
@@ -877,12 +882,7 @@
       <div class="contact-card">
         <div class="contact-role">Activities &amp; Entertainment</div>
         <div class="contact-name">Mandi Kane</div>
-        <div class="contact-info"><a href="mailto:event@CoopersburgCommunityDay.org">event@CoopersburgCommunityDay.org</a></div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-role">Volunteers</div>
-        <div class="contact-name">Volunteer Team</div>
-        <div class="contact-info"><a href="mailto:volunteer@CoopersburgCommunityDay.org">volunteer@CCD.org</a><br><a href="tel:2158920725">215-892-0725</a></div>
+        <div class="contact-info"><a href="mailto:event@CoopersburgCommunityDay.org">Event@CoopersburgCommunityDay.org</a></div>
       </div>
       <div class="contact-card">
         <div class="contact-role">Graphics &amp; Media</div>
