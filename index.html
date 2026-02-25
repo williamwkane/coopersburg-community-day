@@ -33,7 +33,9 @@
     /* ── NAV ── */
     nav{position:sticky;top:0;z-index:100;background:var(--bark);border-bottom:3px solid var(--gold)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--max-w);margin:0 auto;padding:0 24px;height:60px}
-    .nav-logo{font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--gold-light);letter-spacing:.04em}
+    .nav-logo{display:flex;align-items:center;gap:10px;color:var(--gold-light);text-decoration:none;opacity:.92;transition:opacity .2s}
+    .nav-logo:hover{opacity:1}
+    .nav-logo-text{font-family:var(--font-display);font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--gold-light);line-height:1.2}
     .nav-links{display:flex;gap:22px;list-style:none}
     .nav-links a{font-family:var(--font-ui);font-size:.8rem;font-weight:500;color:rgba(247,242,232,.85);letter-spacing:.07em;text-transform:uppercase;transition:color .2s}
     .nav-links a:hover{color:var(--gold-light)}
@@ -308,7 +310,9 @@
 
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">CCD · Since 1992</div>
+    <a href="#home" class="nav-logo" aria-label="Coopersburg Community Day — back to top">
+      <img src="media/cow-logo.png" alt="Coopersburg Community Day" style="height:46px;width:auto;display:block;">
+    </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#schedule">Schedule</a></li>
