@@ -90,6 +90,7 @@
     .section-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.7rem);font-weight:700;line-height:1.2;color:var(--bark)}
     .section-title em{color:var(--maple);font-style:italic}
     .section-lead{font-size:1rem;color:var(--maple);max-width:620px;margin-top:14px}
+    .section-subtitle{font-family:var(--font-body);font-style:italic;font-size:1.05rem;color:var(--maple);max-width:560px;margin:14px auto 0;text-align:center;line-height:1.65;opacity:.85}
     .divider{width:44px;height:3px;background:var(--gold);margin:18px 0}
 
     /* ── ABOUT ── */
@@ -681,7 +682,7 @@
       <div class="section-label">Our Mission & Values</div>
       <h2 class="section-title" style="color:var(--cream)">What We Stand For</h2>
       <div class="divider"></div>
-      <p style="color:rgba(247,242,232,.75);max-width:560px;margin:0 auto;font-style:italic;font-family:var(--font-body)">Coopersburg Community Day exists to celebrate Small Town America by bringing together residents, local businesses, and nonprofit organizations for a free, family-friendly event rooted in community pride and tradition.</p>
+      <p class="section-subtitle" style="color:rgba(247,242,232,.8)">Coopersburg Community Day exists to celebrate Small Town America by bringing together residents, local businesses, and nonprofit organizations for a free, family-friendly event rooted in community pride and tradition.</p>
     </div>
     <div class="values-grid">
       <div class="value-card">
@@ -727,58 +728,7 @@
         <p class="roots-label">Coopersburg, Pennsylvania</p>
       </div>
       <div style="flex-shrink:0">
-        <!-- Holstein dairy cow — side profile, facing right -->
-        <svg width="130" height="110" viewBox="0 0 130 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Coopersburg cow — a nod to the borough's agricultural heritage">
-          <!-- ground shadow -->
-          <ellipse cx="65" cy="104" rx="42" ry="5" fill="#7A4A1E" opacity=".1"/>
-          <!-- tail -->
-          <path d="M18 62 Q8 54 11 43 Q13 35 7 30" stroke="#222" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <ellipse cx="6" cy="28" rx="4" ry="5.5" fill="#333" transform="rotate(-10 6 28)"/>
-          <!-- body — white base -->
-          <ellipse cx="62" cy="68" rx="38" ry="24" fill="white" stroke="#222" stroke-width="1.5"/>
-          <!-- black patches on body -->
-          <path d="M40 52 Q50 46 60 50 Q65 60 55 66 Q44 68 40 58 Z" fill="#1a1a1a"/>
-          <path d="M72 72 Q80 66 90 70 Q94 78 86 83 Q76 84 72 76 Z" fill="#1a1a1a"/>
-          <path d="M28 64 Q34 58 42 62 Q44 72 36 74 Q28 72 28 66 Z" fill="#1a1a1a"/>
-          <!-- neck -->
-          <path d="M96 58 Q104 52 108 56 Q110 65 100 70 Q96 68 94 64 Z" fill="white" stroke="#222" stroke-width="1.2"/>
-          <!-- head -->
-          <ellipse cx="112" cy="52" rx="14" ry="12" fill="white" stroke="#222" stroke-width="1.5"/>
-          <!-- black patch on head -->
-          <path d="M105 44 Q113 40 118 46 Q116 52 108 52 Q104 50 105 44 Z" fill="#1a1a1a"/>
-          <!-- snout -->
-          <ellipse cx="124" cy="58" rx="7" ry="5" fill="#f0c0b0" stroke="#c0a090" stroke-width="1"/>
-          <circle cx="122" cy="57" r="1.6" fill="#7a5040"/>
-          <circle cx="126" cy="57" r="1.6" fill="#7a5040"/>
-          <!-- eye -->
-          <circle cx="110" cy="48" r="2.8" fill="#1a1a1a"/>
-          <circle cx="111" cy="47" r="1" fill="white" opacity=".85"/>
-          <!-- ear -->
-          <ellipse cx="100" cy="43" rx="5" ry="3.5" fill="white" stroke="#222" stroke-width="1.2" transform="rotate(-20 100 43)"/>
-          <ellipse cx="100" cy="43" rx="3" ry="2" fill="#f0c0b0" transform="rotate(-20 100 43)"/>
-          <!-- horns -->
-          <path d="M105 42 Q102 32 98 29" stroke="#c8922a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <path d="M116 41 Q118 31 122 29" stroke="#c8922a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-          <!-- udder -->
-          <ellipse cx="58" cy="90" rx="14" ry="7" fill="#f4c8b8" stroke="#d4a898" stroke-width="1"/>
-          <line x1="52" y1="97" x2="51" y2="103" stroke="#d4a898" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="57" y1="97" x2="57" y2="104" stroke="#d4a898" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="63" y1="97" x2="63" y2="104" stroke="#d4a898" stroke-width="1.5" stroke-linecap="round"/>
-          <!-- legs -->
-          <rect x="33" y="88" width="7" height="17" rx="3.5" fill="white" stroke="#222" stroke-width="1.2"/>
-          <rect x="46" y="90" width="7" height="15" rx="3.5" fill="white" stroke="#222" stroke-width="1.2"/>
-          <rect x="72" y="90" width="7" height="15" rx="3.5" fill="white" stroke="#222" stroke-width="1.2"/>
-          <rect x="85" y="88" width="7" height="17" rx="3.5" fill="white" stroke="#222" stroke-width="1.2"/>
-          <!-- hooves -->
-          <rect x="33" y="102" width="7" height="4" rx="2" fill="#333"/>
-          <rect x="46" y="102" width="7" height="4" rx="2" fill="#333"/>
-          <rect x="72" y="102" width="7" height="4" rx="2" fill="#333"/>
-          <rect x="85" y="102" width="7" height="4" rx="2" fill="#333"/>
-          <!-- bell -->
-          <rect x="104" y="64" width="7" height="8" rx="2" fill="#c8922a" stroke="#a07020" stroke-width="1"/>
-          <line x1="107.5" y1="72" x2="107.5" y2="75" stroke="#a07020" stroke-width="1.5"/>
-          <circle cx="107.5" cy="76" r="1.5" fill="#a07020"/>
-        </svg>
+        <img src="media/cow-logo.png" alt="Coopersburg Community Day cow" style="height:100px;width:auto;display:block;opacity:.85">
       </div>
       <div style="text-align:left">
         <p class="roots-quote">Community Day is our chance to honor everything that makes this small town worth celebrating — every single year.</p>
@@ -795,7 +745,7 @@
       <div class="section-label">Our 2025 Sponsors</div>
       <h2 class="section-title">Thank You to Our <em>Community Partners</em></h2>
       <div class="divider"></div>
-      <p class="section-lead">Community Day would not be possible without the extraordinary generosity of our local business sponsors.</p>
+      <p class="section-subtitle">Community Day would not be possible without the extraordinary generosity of our local business sponsors.</p>
     </div>
     <div class="sponsor-tier">
       <div class="tier-label"><span class="tier-badge tier-leadership">⭐ Community Leadership</span><span class="tier-amount">$1,000+</span></div>
@@ -842,7 +792,7 @@
       <div class="section-label">Get Involved</div>
       <h2 class="section-title">Be Part of <em>Community Day</em></h2>
       <div class="divider"></div>
-      <p class="section-lead">Three meaningful ways to participate. Registration deadline is August 31, 2026.</p>
+      <p class="section-subtitle">Three meaningful ways to participate. Registration deadline is August 31, 2026.</p>
     </div>
     <div class="involved-grid">
       <div class="involved-card nonprofit">
