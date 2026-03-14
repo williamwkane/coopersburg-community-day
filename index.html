@@ -651,7 +651,7 @@
       </div>
       <div>
         <div class="map-embed">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.0!2d-75.38638!3d40.53018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c43ef1234567%3A0x89c43ef1234567!2sSouthern+Lehigh+Living+Memorial+Community+Park!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus&q=Southern+Lehigh+Living+Memorial+Community+Park+Coopersburg+PA" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
+          <iframe src="https://maps.google.com/maps?q=215+E+Fairmount+St,+Coopersburg,+PA+18036&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
         </div>
         <p class="map-caption">Southern Lehigh Living Memorial Community Park · E. Fairmount St &amp; Rte. 309, Coopersburg, PA</p>
       </div>
@@ -825,6 +825,10 @@
         </div>
         <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card sage">Register Now →</a>
         <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+      </div>
+      <div class="involved-card sponsor">
+        <div class="card-icon">🤝</div>
+        <h3 class="card-title">Become a Corporate Sponsor</h3>
         <p class="card-desc">Your sponsorship makes Community Day possible and puts your business in front of 10,000+ attendees from across the Lehigh Valley. Four tiers from General Sponsor to Community Leadership.</p>
         <div class="card-fee">
           <strong>Community Leadership:</strong> $1,000+ &nbsp;|&nbsp; <strong>Blue Ribbon:</strong> $500<br>
@@ -945,4 +949,56 @@
   const vid2 = document.getElementById('hero-vid-2');
   let showingFirst = true;
 
-  function crossfa
+  function crossfade() {
+    if (showingFirst) {
+      vid1.style.opacity = '0'; vid2.style.opacity = '1';
+      vid2.play();
+    } else {
+      vid2.style.opacity = '0'; vid1.style.opacity = '1';
+      vid1.play();
+    }
+    showingFirst = !showingFirst;
+  }
+  if (vid1 && vid2) {
+    vid1.addEventListener('timeupdate', function() {
+      if (vid1.duration && vid1.currentTime > vid1.duration - 1.5 && showingFirst) crossfade();
+    });
+    vid2.addEventListener('timeupdate', function() {
+      if (vid2.duration && vid2.currentTime > vid2.duration - 1.5 && !showingFirst) crossfade();
+    });
+  }
+
+  // Countdown timer
+  const targetDate = new Date('September 19, 2026 10:00:00').getTime();
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      document.getElementById('cd-days').textContent = '0';
+      document.getElementById('cd-hours').textContent = '0';
+      document.getElementById('cd-minutes').textContent = '0';
+      document.getElementById('cd-seconds').textContent = '0';
+      return;
+    }
+    document.getElementById('cd-days').textContent    = Math.floor(diff / (1000*60*60*24));
+    document.getElementById('cd-hours').textContent   = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    document.getElementById('cd-minutes').textContent = Math.floor((diff % (1000*60*60)) / (1000*60));
+    document.getElementById('cd-seconds').textContent = Math.floor((diff % (1000*60)) / 1000);
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Footer year
+  const yr = document.getElementById('year');
+  if (yr) yr.textContent = new Date().getFullYear();
+
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+  }
+</script>
+</body>
+</html>
