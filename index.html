@@ -371,10 +371,6 @@
     .footer-credit a{color:rgba(245,239,224,.32)}
 
     /* ── MOBILE RESPONSIVE ── */
-    @media(max-width:1080px){
-      .nav-links{display:none}
-      .hamburger{display:block}
-    }
     @media(max-width:860px){
       .about-grid,.history-inner,.event-info-grid,.schedule-grid{grid-template-columns:1fr}
       .history-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
@@ -1083,12 +1079,32 @@
   const yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();
 
-  // Mobile nav
+  // Mobile nav — collapse only when links actually overflow
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
+  const navInner = document.querySelector('.nav-inner');
+  const navLinks = document.querySelector('.nav-links');
+
+  function updateNav() {
+    if (!navInner || !navLinks || !hamburger) return;
+    // Temporarily show links to measure their natural width
+    navLinks.style.display = 'flex';
+    hamburger.style.display = 'none';
+    const overflowing = navInner.scrollWidth > navInner.clientWidth;
+    if (overflowing) {
+      navLinks.style.display = 'none';
+      hamburger.style.display = 'block';
+    }
+  }
+
+  // Run on load and on every resize
+  updateNav();
+  window.addEventListener('resize', updateNav);
+
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+    document.getElementById('mobile-register-btn') && document.getElementById('mobile-register-btn').addEventListener('click', () => mobileMenu.classList.remove('open'));
   }
 </script>
 </body>
