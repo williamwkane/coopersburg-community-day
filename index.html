@@ -130,8 +130,8 @@
     .mobile-menu{display:none;flex-direction:column;background:var(--teal-dark);padding:12px 24px 20px;border-top:1px solid rgba(206,176,111,.2)}
     .mobile-menu a{font-family:var(--font-ui);font-size:.85rem;font-weight:600;color:var(--cream);padding:11px 0;border-bottom:1px solid rgba(206,176,111,.15);text-transform:uppercase;letter-spacing:.1em;background:none}
     .mobile-menu a:last-child{border-bottom:none}
-    .mobile-register-btn{display:block;width:100%;margin-top:14px;padding:13px 0;background:var(--gold);color:var(--ink);font-family:var(--font-ui);font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-align:center;border:none;border-radius:var(--radius);cursor:pointer}
-    .mobile-register-btn:hover{background:var(--gold-light)}
+    .mobile-register-btn{display:block;width:100%;margin-top:14px;padding:13px 0;background:#ceb06f;color:#1e1410;font-family:'Josefin Sans',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-align:center;border:none;border-radius:3px;cursor:pointer;-webkit-appearance:none;appearance:none}
+    .mobile-register-btn:hover{background:#e2c98a}
     .mobile-menu.open{display:flex}
 
     /* ── HERO ── */
@@ -414,7 +414,7 @@
       <li><a href="#visit">Visit</a></li>
       <li><a href="#history">History</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
-      <li><a href="#involved">Get Involved</a></li>
+      <li><a href="#involved">Involved</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#involved" class="nav-cta">Register</a></li>
     </ul>
@@ -431,7 +431,7 @@
     <a href="#sponsors">Sponsors</a>
     <a href="#involved">Get Involved</a>
     <a href="#contact">Contact</a>
-    <button class="mobile-register-btn" onclick="document.querySelector('[zeffy-form-link]').click()">Register →</button>
+    <button class="mobile-register-btn" id="mobile-register-btn" onclick="document.querySelector('[zeffy-form-link]').click()">Register →</button>
   </div>
 </nav>
 
