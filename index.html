@@ -120,8 +120,8 @@
     .nav-logo{display:flex;align-items:center;gap:10px;color:var(--gold-light);text-decoration:none;opacity:.95;transition:opacity .2s}
     .nav-logo:hover{opacity:1}
     .nav-logo-text{font-family:var(--font-display);font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--gold-light);line-height:1.2}
-    .nav-links{display:flex;gap:22px;list-style:none}
-    .nav-links a{font-family:var(--font-ui);font-size:.75rem;font-weight:600;color:rgba(245,239,224,.85);letter-spacing:.12em;text-transform:uppercase;transition:color .2s}
+    .nav-links{display:flex;gap:14px;list-style:none}
+    .nav-links a{font-family:var(--font-ui);font-size:.72rem;font-weight:600;color:rgba(245,239,224,.85);letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
     .nav-links a:hover{color:var(--gold-light)}
     .nav-cta{background:var(--gold);color:var(--ink)!important;padding:7px 18px;border-radius:var(--radius);font-weight:700!important;letter-spacing:.1em!important}
     .nav-cta:hover{background:var(--gold-light)!important;color:var(--walnut)!important}
@@ -130,6 +130,7 @@
     .mobile-menu{display:none;flex-direction:column;background:var(--teal-dark);padding:12px 24px 20px;border-top:1px solid rgba(206,176,111,.2)}
     .mobile-menu a{font-family:var(--font-ui);font-size:.85rem;font-weight:600;color:var(--cream);padding:11px 0;border-bottom:1px solid rgba(206,176,111,.15);text-transform:uppercase;letter-spacing:.1em}
     .mobile-menu a:last-child{border-bottom:none}
+    .mobile-menu .mobile-register{margin-top:12px;background:var(--gold);color:var(--ink)!important;text-align:center;border-radius:var(--radius);padding:12px 0;border-bottom:none!important}
     .mobile-menu.open{display:flex}
 
     /* ── HERO ── */
@@ -369,7 +370,7 @@
     .footer-credit a{color:rgba(245,239,224,.32)}
 
     /* ── MOBILE RESPONSIVE ── */
-    @media(max-width:1100px){
+    @media(max-width:860px){
       .nav-links{display:none}
       .hamburger{display:block}
       .about-grid,.history-inner,.event-info-grid,.schedule-grid{grid-template-columns:1fr}
@@ -429,7 +430,7 @@
     <a href="#sponsors">Sponsors</a>
     <a href="#involved">Get Involved</a>
     <a href="#contact">Contact</a>
-    <a href="#involved" zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" style="margin-top:8px;background:var(--gold);color:var(--ink)!important;text-align:center;border-radius:var(--radius);font-weight:700;letter-spacing:.1em;">Register →</a>
+    <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="mobile-register">Register →</a>
   </div>
 </nav>
 
