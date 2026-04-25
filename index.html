@@ -180,7 +180,7 @@
     .section-title em{color:var(--teal);font-style:italic}
     .section-lead{font-size:1rem;color:var(--umber);max-width:620px;margin-top:14px}
     .section-subtitle{font-family:var(--font-body);font-style:italic;font-size:1.05rem;color:var(--umber);max-width:680px;margin-top:14px;line-height:1.65;opacity:.9}
-    .section-subtitle.centered{text-align:center;margin-left:auto;margin-right:auto}
+    .section-subtitle.centered{text-align:center;margin-left:auto;margin-right:auto;max-width:860px}
     .divider{width:44px;height:3px;background:var(--gold);margin:18px 0}
 
     /* ── ABOUT ── */
@@ -398,7 +398,7 @@
 </head>
 <body>
 
-<div class="announce"><p>📅 Mark your calendars! Coopersburg Community Day is <strong>Saturday, September 19, 2026.</strong> Registration opens Spring 2026.</p></div>
+<div class="announce"><p>📅 Coopersburg Community Day is <strong>Saturday, September 19, 2026</strong> — and registration is now open! Vendors, sponsors &amp; nonprofits: <a href="#involved" style="color:var(--gold-light);text-decoration:underline;">sign up today →</a></p></div>
 
 <nav>
   <div class="nav-inner">
@@ -410,9 +410,9 @@
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#food">Food</a></li>
       <li><a href="#visit">Visit</a></li>
-      <li><a href="#history">History</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
       <li><a href="#involved">Get Involved</a></li>
+      <li><a href="#history">History</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#involved" class="nav-cta">Register</a></li>
     </ul>
@@ -425,9 +425,9 @@
     <a href="#schedule">Schedule</a>
     <a href="#food">Food</a>
     <a href="#visit">Visit</a>
-    <a href="#history">History</a>
     <a href="#sponsors">Sponsors</a>
     <a href="#involved">Get Involved</a>
+    <a href="#history">History</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -514,7 +514,7 @@
         <div class="section-label" style="color:var(--gold-light);">Our Photos</div>
         <h2 class="section-title" style="color:var(--cream);">See You <em>at the Park</em></h2>
       </div>
-      <p style="font-family:var(--font-ui);font-size:.76rem;color:rgba(247,242,232,.4);letter-spacing:.08em;text-transform:uppercase;text-align:right;">Coopersburg, PA<br>September 2025</p>
+      <p style="font-family:var(--font-ui);font-size:.76rem;color:rgba(247,242,232,.4);letter-spacing:.08em;text-transform:uppercase;text-align:right;"></p>
     </div>
     <div class="gallery-grid">
       <div class="gallery-item tall">
@@ -560,7 +560,7 @@
         <div class="gallery-label">Kids Activities All Day</div>
       </div>
     </div>
-    <p class="gallery-caption">Coopersburg Community Day · September 2025</p>
+
   </div>
 </section>
 
@@ -576,62 +576,56 @@
 
     <div class="schedule-grid">
 
-      <!-- LEFT: Main Stage + Strolling Performers -->
+      <!-- LEFT: Day at a Glance -->
       <div>
-        <h3>Main Stage Entertainment</h3>
+        <h3>Day at a Glance</h3>
         <div class="schedule-item">
-          <div class="schedule-time">9:45 AM</div>
-          <div class="schedule-event"><strong>Southern Lehigh High School Band</strong><span>Opening performance</span></div>
+          <div class="schedule-time">10:00 AM</div>
+          <div class="schedule-event"><strong>Gates Open</strong><span>Southern Lehigh Living Memorial Park</span></div>
         </div>
         <div class="schedule-item">
-          <div class="schedule-time">10:30 AM</div>
-          <div class="schedule-event"><strong>Opening Ceremonies</strong><span>Flag raising with Coopersburg Fire Co.</span></div>
-        </div>
-        <div class="schedule-item">
-          <div class="schedule-time">12:00 PM</div>
-          <div class="schedule-event"><strong>AM Radio Tribute Band</strong><span>Live music under the main tent</span></div>
-        </div>
-        <div class="schedule-item">
-          <div class="schedule-time">2:00 PM</div>
-          <div class="schedule-event"><strong>Craig Thatcher Acoustic Band</strong><span>Closing main stage performance</span></div>
+          <div class="schedule-time">Morning</div>
+          <div class="schedule-event"><strong>Opening Ceremonies</strong><span>Led by local leaders, accompanied by a flag raising by Coopersburg Fire Co.</span></div>
         </div>
         <div class="schedule-item">
           <div class="schedule-time">All Day</div>
-          <div class="schedule-event"><strong>Classic &amp; Antique Cars</strong><span>50+ vehicles on display — Area 5</span></div>
+          <div class="schedule-event"><strong>Live Main Stage Entertainment</strong><span>Music and performances throughout the day</span></div>
         </div>
         <div class="schedule-item">
           <div class="schedule-time">All Day</div>
-          <div class="schedule-event"><strong>Historical Society Exhibit</strong><span>Coopersburg history — Area 4</span></div>
+          <div class="schedule-event"><strong>Strolling Performers &amp; Characters</strong><span>Roaming the park all afternoon</span></div>
         </div>
         <div class="schedule-item">
-          <div class="schedule-time">11:00 AM</div>
-          <div class="schedule-event"><strong>LVHN Medevac Helicopter</strong><span>On-ground display — Area 6</span></div>
+          <div class="schedule-time">All Day</div>
+          <div class="schedule-event"><strong>Classic &amp; Antique Car Show</strong><span>50+ vehicles on display</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">All Day</div>
+          <div class="schedule-event"><strong>Kids' Activities</strong><span>Free fun for the whole family</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">5:00 PM</div>
+          <div class="schedule-event"><strong>Event Closes</strong><span>See you next year!</span></div>
         </div>
 
-        <h3 style="margin-top:32px">Strolling Performers</h3>
-        <ul class="strolling-list">
-          <li><span>Spiderman &amp; Elsa</span><span class="s-time">11:00 – 1:00</span></li>
-          <li><span>Mary Todd Lincoln</span><span class="s-time">11:00 – 2:00</span></li>
-          <li><span>Go with YoYo</span><span class="s-time">11:00 – 12:00</span></li>
-          <li><span>Joe Keppel, Magician</span><span class="s-time">12:00 – 2:00</span></li>
-          <li><span>David Darwin <em style="font-size:.75rem;opacity:.7">— As seen on America's Got Talent</em></span><span class="s-time">12:00 – 2:00</span></li>
-          <li><span>George the Magician &amp; Bubble Extraordinaire</span><span class="s-time">12:00 – 4:00</span></li>
-          <li><span>Victorian Highwheelers</span><span class="s-time">Throughout the day</span></li>
-        </ul>
+        <div style="margin-top:28px;padding:20px 22px;background:rgba(206,176,111,.12);border:1px solid rgba(206,176,111,.3);border-radius:var(--radius);">
+          <p style="font-family:var(--font-ui);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px;">📣 Full Schedule Coming Soon</p>
+          <p style="font-size:.92rem;color:var(--cream);line-height:1.6;">Entertainment lineup, performer schedules, and activity details will be announced this summer. Follow us on <a href="https://www.facebook.com/coopersburgcommunityday" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline;">Facebook</a> and <a href="https://www.instagram.com/coopersburgcommunityday/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline;">Instagram</a> to be the first to know.</p>
+        </div>
       </div>
 
-      <!-- RIGHT: Kids Activities -->
+      <!-- RIGHT: What to Expect + Park Map -->
       <div>
-        <h3>Free Fun for Kids (All Day)</h3>
+        <h3>What to Expect</h3>
         <div class="kids-grid">
-          <div class="kids-item"><div class="k-icon">🎨</div><p>Face Painting</p></div>
-          <div class="kids-item"><div class="k-icon">🏃</div><p>Bounce House &amp; Obstacle Course</p></div>
-          <div class="kids-item"><div class="k-icon">🐐</div><p>Goat Snuggles</p></div>
-          <div class="kids-item"><div class="k-icon">🌾</div><p>Hay Maze &amp; Hay Ride</p></div>
-          <div class="kids-item"><div class="k-icon">🎭</div><p>DeSales Act 3 Children's Theatre</p></div>
-          <div class="kids-item"><div class="k-icon">🎪</div><p>Strolling Performers &amp; Characters</p></div>
-          <div class="kids-item"><div class="k-icon">🏒</div><p>MeLVin: Lehigh Valley Phantoms Mascot</p></div>
-          <div class="kids-item"><div class="k-icon">💃</div><p>Dance Works Performance</p></div>
+          <div class="kids-item"><div class="k-icon">🎵</div><p>Live Music &amp; Entertainment</p></div>
+          <div class="kids-item"><div class="k-icon">🎨</div><p>75+ Craft Vendors</p></div>
+          <div class="kids-item"><div class="k-icon">🏛️</div><p>60+ Nonprofit Organizations</p></div>
+          <div class="kids-item"><div class="k-icon">🚗</div><p>Classic &amp; Antique Car Show</p></div>
+          <div class="kids-item"><div class="k-icon">🎪</div><p>Strolling Performers</p></div>
+          <div class="kids-item"><div class="k-icon">🧒</div><p>Free Kids' Activities</p></div>
+          <div class="kids-item"><div class="k-icon">🍖</div><p>Food Trucks &amp; Community Favorites</p></div>
+          <div class="kids-item"><div class="k-icon">🅿️</div><p>Free Parking &amp; Shuttle</p></div>
         </div>
 
         <h3 style="margin-top:32px">Park Map</h3>
@@ -644,7 +638,7 @@
           <li><span>③ Custom Bikes &amp; Fire Co.</span><span class="s-time">E. Landis St. entrance</span></li>
           <li><span>④ Historical Society Tent</span><span class="s-time">All day</span></li>
           <li><span>⑤ Classic &amp; Antique Cars</span><span class="s-time">All day</span></li>
-          <li><span>⑥ Helicopter Display</span><span class="s-time">11:00 AM – 12:00 PM</span></li>
+          <li><span>⑥ Helicopter Display</span><span class="s-time">Special appearance</span></li>
         </ul>
       </div>
 
@@ -662,42 +656,46 @@
 
     <div style="margin-top:32px;margin-bottom:36px;background:var(--cream);border:2px solid var(--gold);border-radius:var(--radius);padding:28px;text-align:center">
       <p style="font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--walnut);margin-bottom:10px">Community Favorites from Local Organizations</p>
-      <p style="font-family:var(--font-ui);font-size:.88rem;color:var(--umber)">Upper Saucon Lion's Club · Taco in a Bag · Pulled Pork &amp; Kielbasa Sandwiches<br>Mac &amp; Cheese · Kettle Corn · Pierogies · Apple Dumplings &amp; Cider · Lemonade</p>
+      <p style="font-family:var(--font-ui);font-size:.88rem;color:var(--umber)">Traditional Hot Dog &amp; Hamburger Classics · Taco in a Bag · Pulled Pork &amp; Kielbasa Sandwiches<br>Mac &amp; Cheese · Kettle Corn · Pierogies · Apple Dumplings &amp; Cider · Lemonade</p>
     </div>
 
     <div class="food-grid">
       <div class="food-card">
         <div class="food-icon">🦞</div>
-        <div class="food-name">Cousins Maine Lobster</div>
-        <div class="food-desc">Fresh Maine lobster rolls and seafood</div>
+        <div class="food-name">Seafood</div>
+        <div class="food-desc">Fresh lobster rolls and coastal favorites returning</div>
       </div>
       <div class="food-card">
         <div class="food-icon">🫔</div>
-        <div class="food-name">Endless Empanadas</div>
-        <div class="food-desc">Handcrafted empanadas, sweet and savory</div>
+        <div class="food-name">International Eats</div>
+        <div class="food-desc">Global street food from fan-favorite trucks</div>
       </div>
       <div class="food-card">
         <div class="food-icon">☕</div>
-        <div class="food-name">Firehouse Coffee</div>
-        <div class="food-desc">Specialty coffee, lattes &amp; cold brew</div>
+        <div class="food-name">Coffee &amp; Drinks</div>
+        <div class="food-desc">Specialty coffee, cold brew &amp; refreshments</div>
       </div>
       <div class="food-card">
         <div class="food-icon">🍧</div>
-        <div class="food-name">Kona Ice</div>
-        <div class="food-desc">Shaved ice with real fruit flavors</div>
+        <div class="food-name">Sweet Treats</div>
+        <div class="food-desc">Shaved ice, desserts &amp; something for every sweet tooth</div>
       </div>
       <div class="food-card">
         <div class="food-icon">🍕</div>
-        <div class="food-name">Paisano Italiano</div>
-        <div class="food-desc">Italian street food favorites</div>
+        <div class="food-name">Italian Classics</div>
+        <div class="food-desc">Crowd-favorite Italian street food</div>
       </div>
       <div class="food-card">
         <div class="food-icon">🍖</div>
-        <div class="food-name">Smokehouse</div>
-        <div class="food-desc">BBQ, smoked meats &amp; all the classics</div>
+        <div class="food-name">BBQ &amp; Smokehouse</div>
+        <div class="food-desc">Smoked meats, BBQ, and all the classics</div>
       </div>
     </div>
-    <p class="food-note" style="margin-top:20px">Bring cash for food, crafts &amp; vendor purchases. ATM not guaranteed on site.</p>
+
+    <div style="margin-top:28px;padding:20px 22px;background:var(--cream);border:1px solid rgba(206,176,111,.4);border-radius:var(--radius);text-align:center;">
+      <p style="font-family:var(--font-ui);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:8px;">🚚 Full Food Truck Lineup Announced This Summer</p>
+      <p style="font-size:.92rem;color:var(--umber);line-height:1.6;">Returning favorites and exciting new additions will be confirmed and posted here. Follow us on <a href="https://www.facebook.com/coopersburgcommunityday" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">Facebook</a> and <a href="https://www.instagram.com/coopersburgcommunityday/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;">Instagram</a> for the exciting announcements.</p>
+    </div>
   </div>
 </section>
 
@@ -730,7 +728,6 @@
           <ul>
             <li>Free admission — no tickets required</li>
             <li>Bring cash for food, crafts &amp; vendors</li>
-            <li>ATM not guaranteed on site</li>
             <li>Rain or shine event</li>
             <li>Pets welcome on leash</li>
           </ul>
@@ -741,6 +738,109 @@
           <iframe loading="lazy" src="https://maps.google.com/maps?q=215+E+Fairmount+St,+Coopersburg,+PA+18036&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
         </div>
         <p class="map-caption">Southern Lehigh Living Memorial Community Park · E. Fairmount St &amp; Rte. 309, Coopersburg, PA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPONSORS -->
+<section class="sponsors" id="sponsors">
+  <div class="container">
+    <div class="sponsors-header">
+      <div class="section-label">Thank You to Our Sponsors</div>
+      <h2 class="section-title">Our <em>Community Partners</em></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle centered">The businesses below made Community Day 2025 possible. We are grateful for their extraordinary generosity and look forward to welcoming our 2026 partners in the months ahead.</p>
+    </div>
+    <div class="sponsor-tier">
+      <div class="tier-label"><span class="tier-badge tier-leadership">⭐ Community Leadership</span><span class="tier-amount">$1,000+</span></div>
+      <div class="sponsors-list">
+        <span class="sponsor-name">Hentzelman</span><span class="sponsor-name">Lutron</span><span class="sponsor-name">Maurer &amp; Scott</span><span class="sponsor-name">Creekview Veterinary Hospital</span><span class="sponsor-name">Xfinity</span>
+      </div>
+    </div>
+    <div class="sponsor-tier">
+      <div class="tier-label"><span class="tier-badge tier-blue">🔵 Blue Ribbon</span><span class="tier-amount">$500</span></div>
+      <div class="sponsors-list">
+        <span class="sponsor-name">Astound</span><span class="sponsor-name">Christa Ward Realtor</span><span class="sponsor-name">Health Focus Partners</span><span class="sponsor-name">JP Mascaro</span><span class="sponsor-name">Lehigh Valley Health Network</span><span class="sponsor-name">Orthodontic Specialists</span><span class="sponsor-name">Pride Abstract</span><span class="sponsor-name">QNB</span><span class="sponsor-name">TW Cooper Insurance</span><span class="sponsor-name">Viper Martial Arts</span><span class="sponsor-name">WB Homes</span>
+      </div>
+    </div>
+    <div class="sponsor-tier">
+      <div class="tier-label"><span class="tier-badge tier-community">🌿 Community Day</span><span class="tier-amount">$250</span></div>
+      <div class="sponsors-list">
+        <span class="sponsor-name">ACRE Windows &amp; Doors</span><span class="sponsor-name">All American Gutter Protection</span><span class="sponsor-name">Alvarez Orthodontics</span><span class="sponsor-name">Bright Horizons</span><span class="sponsor-name">Dance Works</span><span class="sponsor-name">Evans Counseling</span><span class="sponsor-name">Giant</span><span class="sponsor-name">Goddard Center Valley</span><span class="sponsor-name">McDonald's of Coopersburg</span><span class="sponsor-name">PA Shakespeare</span><span class="sponsor-name">Passanante's Home Food Service</span><span class="sponsor-name">Restoration Services</span><span class="sponsor-name">St. Luke's Physical Therapy</span><span class="sponsor-name">The Lesson Center</span><span class="sponsor-name">Zen Brazilian Jiu-Jitsu</span>
+      </div>
+    </div>
+    <div class="sponsor-tier">
+      <div class="tier-label"><span class="tier-badge tier-general">General</span><span class="tier-amount">$100</span></div>
+      <div class="sponsors-list">
+        <span class="sponsor-name">Captain Bob's Fresh Seafood</span><span class="sponsor-name">Esteem Medical</span><span class="sponsor-name">Get in Touch Massage</span><span class="sponsor-name">Link's Beverage</span><span class="sponsor-name">Little Orchids</span><span class="sponsor-name">Madle's Hardware</span><span class="sponsor-name">McPhillips, CPA</span><span class="sponsor-name">Pool Pro</span>
+      </div>
+    </div>
+    <div class="sponsor-tier">
+      <div class="tier-label"><span class="tier-badge tier-inkind">In-Kind</span></div>
+      <div class="sponsors-list">
+        <span class="sponsor-name">Coopersburg Construction</span><span class="sponsor-name">Corp/Digital Outdoor Display</span><span class="sponsor-name">Cornerstone Presbyterian Church</span><span class="sponsor-name">EBC Printing &amp; Signs</span><span class="sponsor-name">Full Moon Rentals</span><span class="sponsor-name">Hausman Fruit Farm</span><span class="sponsor-name">Krise Transportation</span><span class="sponsor-name">Move 'N Play</span><span class="sponsor-name">nnstudio</span><span class="sponsor-name">ORE Equipment Rental</span>
+      </div>
+    </div>
+    <div class="sponsor-cta">
+      <p>Become a 2026 Community Day Sponsor</p>
+      <div class="sub">Your support reaches 10,000+ neighbors across the Lehigh Valley. Four tiers starting at just $100.</div>
+      <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn btn-primary">Register Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section class="involved" id="involved">
+  <div class="container">
+    <div class="involved-header">
+      <div class="section-label">Get Involved</div>
+      <h2 class="section-title">Be Part of <em>Community Day</em></h2>
+      <div class="divider"></div>
+      <p class="section-subtitle centered">Four meaningful ways to participate. Registration deadline is August 15, 2026.</p>
+    </div>
+    <div class="involved-grid">
+      <div class="involved-card nonprofit">
+        <div class="card-icon">🏘️</div>
+        <h3 class="card-title">Nonprofit &amp; Community Organizations</h3>
+        <p class="card-desc">CCD is one of the Lehigh Valley's best fundraising opportunities for local nonprofits, churches, and community groups. Over 60 organizations participate each year, with direct access to 10,000+ neighbors.</p>
+        <div class="card-fee">
+          <strong>Fundraising space:</strong> $35 per 10'×10' space<br>
+          <strong>Non-fundraising (demo/exhibit only):</strong> First space free; $35 each additional
+        </div>
+        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card sage">Register Now →</a>
+        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+      </div>
+      <div class="involved-card sponsor">
+        <div class="card-icon">🤝</div>
+        <h3 class="card-title">Become a Corporate Sponsor</h3>
+        <p class="card-desc">Your sponsorship makes Community Day possible and puts your business in front of 10,000+ attendees from across the Lehigh Valley. Four tiers from General Sponsor to Community Leadership.</p>
+        <div class="card-fee">
+          <strong>Community Leadership:</strong> $1,000+ &nbsp;|&nbsp; <strong>Blue Ribbon:</strong> $500<br>
+          <strong>Community Day:</strong> $250 &nbsp;|&nbsp; <strong>General:</strong> $100
+        </div>
+        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card gold">Register Now →</a>
+        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+      </div>
+      <div class="involved-card sponsor" style="border-color:var(--sand)">
+        <div class="card-icon">🎨</div>
+        <h3 class="card-title">Craft Vendors</h3>
+        <p class="card-desc">Showcase your handmade and artisan goods to 10,000+ attendees from across the Lehigh Valley. One of the region's best single-day markets for independent makers.</p>
+        <div class="card-fee">
+          <strong>Craft Vendor space:</strong> $35 per 10'×10' space
+        </div>
+        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card gold">Register Now →</a>
+        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+      </div>
+      <div class="involved-card volunteer">
+        <div class="card-icon">🙋</div>
+        <h3 class="card-title">Volunteer</h3>
+        <p class="card-desc">Sponsors fund it, but volunteers make it happen. Whether you can give a few hours or the whole day, every hand matters. No experience necessary, just a passion for community.</p>
+        <div class="card-fee">
+          <strong>Contact:</strong> Ben Craig · 215-892-0725<br>
+          <a href="mailto:volunteer@CoopersburgCommunityDay.org">volunteer@CoopersburgCommunityDay.org</a>
+        </div>
+        <a href="mailto:volunteer@CoopersburgCommunityDay.org" class="btn-card rust">Sign Up to Volunteer →</a>
       </div>
     </div>
   </div>
@@ -760,24 +860,23 @@
         <div class="section-label">Our Story</div>
         <h2 class="section-title">A Tradition <em>Thirty-Four Years</em> in the Making</h2>
         <div class="divider"></div>
-        <p>It started with a vision and a simple directive.</p>
         <p>In 1991, Evelyn Borger and Sandy Gutshall envisioned a new annual gathering, inspired by a beloved community picnic held in 1979 to celebrate the Coopersburg Centennial. Evelyn approached Ken Mohr, Jr., and asked him to make it real. Her direction was memorable: <em>not carnival-like.</em> That two-word brief has quietly shaped everything about Community Day ever since.</p>
-        <p>What Ken and his founding committee built in 1992 was remarkably complete from the very start. The vision was clear: engage the whole community in the celebration, and let community itself be the main ingredient.</p>
+        <p>Ken assembled a founding committee and got to work. It was Bill Miracle who took that vision and turned it into something you could walk through. Leading the ground crew, Bill transformed Memorial Park into a welcoming venue, converting an idea on paper into a three-dimensional reality. Together, Ken and Bill set a standard of completeness that has defined the event from the very first day.</p>
         <div class="history-pull">
           <p>"It is so much bigger than I had imagined."</p>
           <small>— Evelyn Borger, on the morning of the first Community Day, 1992</small>
         </div>
         <p>On the morning of that inaugural event, as vendors set up their exhibits and the park came alive, Evelyn turned to Ken and said exactly that. Ken's reply: "It is so much bigger than I had imagined too." That shared sense of wonder has a way of repeating itself every September.</p>
         <p>Early editions of the event featured everything from Irish Step Dancers and Marionette Troupes to homemade pierogies, ShooFly Pie, and Fried Oreos, the kind of lineup you can only find at a real small-town celebration. Word spread quickly. Within a few years, corporate sponsors were approaching the organizing committee asking to participate before the annual solicitation letters had even gone out. Community Day had become something people wanted to be part of.</p>
-        <p>Over the decades, a rotating cast of dedicated volunteers has carried the event forward, each era leaving its own imprint. Crafters found a home here for years thanks to the steady hands of Jack Siplak and Paul McAndrews. Joyce Eisenhart and Pat Pechacek ran the flea market with the kind of reliability that volunteers dream of. The antique car and small engine display is a feat of community organizing in its own right, assembled each year from enthusiasts across the region who bring their own vehicles to share. Don Bassler was among the first to take on that challenge, with Rob Newhard joining the effort along the way, and Roger Moyer carrying the torch today. And through it all, the books have been kept with quiet precision by treasurer Pam Page, nearly from the very beginning.</p>
-        <p>What began with a handful of volunteers has grown into one of the Lehigh Valley's most beloved annual traditions, drawing over 10,000 attendees each September, featuring 60+ nonprofit organizations, 75+ craft vendors, and more than 70 business sponsors — the latter accounting for roughly 80% of the event's annual revenue. Community Day runs entirely on the dedication of people who believe in it. That commitment reached a meaningful milestone in 2026, when CCD formally established its own 501(c)(3) nonprofit status, cementing its independence and ensuring the mission endures for generations to come.</p>
-        <p>The Coopersburg Historical Society, who presented Community Day for over 30 years, <a href="https://www.coopersburghistoricalsociety.org/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline">recently launched a new website</a> dedicated to preserving the rich history of our borough. Well worth a visit.</p>
+        <p>Over the decades, a rotating cast of dedicated volunteers has carried the event forward, each era leaving its own imprint. Crafters found a home here for years thanks to the steady hands of Jack Siplak and Paul McAndrews. Joyce Eisenhart and Pat Pechacek ran the flea market with the kind of reliability that volunteers dream of.</p>
+        <p>The antique car and small engine display is a feat of community organizing in its own right, assembled each year from enthusiasts across the region. Don Bassler was among the first to take on that challenge, with Rob Newhard joining the effort along the way, and Roger Moyer carrying the torch today. And through it all, the books have been kept with quiet precision by treasurer Pam Page, nearly from the very beginning.</p>
+        <p>What began with a handful of volunteers has grown into one of the Lehigh Valley's most beloved annual traditions, drawing over 10,000 attendees each September, with 60+ nonprofit organizations, 75+ craft vendors, and more than 70 business sponsors. Community Day runs entirely on the dedication of people who believe in it. That commitment reached a meaningful milestone in 2026, when CCD formally established its own 501(c)(3) nonprofit status, cementing its independence and ensuring the mission endures for generations to come. The Coopersburg Historical Society, who presented Community Day for over 30 years, <a href="https://www.coopersburghistoricalsociety.org/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline">recently launched a new website</a> dedicated to preserving the rich history of our borough, well worth a visit.</p>
         <div class="timeline">
           <div class="timeline-item"><div class="timeline-year">1991</div><div class="timeline-content"><strong>The Idea Takes Root</strong><span>Evelyn Borger and Sandy Gutshall envision an annual celebration, inspired by the 1979 Coopersburg Centennial picnic. Ken Mohr, Jr. is asked to lead it. "Not carnival-like" becomes the founding philosophy.</span></div></div>
           <div class="timeline-item"><div class="timeline-year">1992</div><div class="timeline-content"><strong>The First Community Day</strong><span>Ken and his founding committee launch a remarkably complete first event — crafters, community organizations, corporate sponsors, antique cars, and entertainment all present from day one. Evelyn's reaction that morning says it all: "It is so much bigger than I had imagined."</span></div></div>
           <div class="timeline-item"><div class="timeline-year">1994</div><div class="timeline-content"><strong>The Torch Passes</strong><span>Coopersburg Historical Society President Cynthia Weber steps in as Chair for two years, helping establish the event's broader community identity during its formative period.</span></div></div>
           <div class="timeline-item"><div class="timeline-year">1996</div><div class="timeline-content"><strong>A Decade of Growth</strong><span>Joe Volk takes over as Chair, guiding Community Day through nine years of steady growth and deepening community roots.</span></div></div>
-          <div class="timeline-item"><div class="timeline-year">2002</div><div class="timeline-content"><strong>A Team Effort</strong><span>Bill Miracle, who first contributed as part of the ground crew in CCD's early years, steps up as Co-Chair alongside Joe Volk, beginning over a decade of partnership leadership.</span></div></div>
+          <div class="timeline-item"><div class="timeline-year">2002</div><div class="timeline-content"><strong>A Team Effort</strong><span>Bill Miracle steps up as Co-Chair alongside Joe Volk, beginning over a decade of partnership leadership that would carry Community Day through some of its strongest years of growth.</span></div></div>
           <div class="timeline-item"><div class="timeline-year">2014</div><div class="timeline-content"><strong>Fresh Energy</strong><span>Greg Callow and Sharon Porter begin their Co-Chairmanship, bringing new ideas and organizational strength to a now-beloved Lehigh Valley tradition.</span></div></div>
           <div class="timeline-item"><div class="timeline-year">2017</div><div class="timeline-content"><strong>Carrying It Forward</strong><span>Sharon Porter and Ben Craig take the reins as Co-Chairs, continuing the event's evolution while honoring the spirit and standards set by every volunteer who came before.</span></div></div>
           <div class="timeline-item"><div class="timeline-year">2026</div><div class="timeline-content"><strong>A New Chapter</strong><span>CCD continues to grow and improve under the leadership of its strong group of volunteers and formally establishes its own 501(c)(3) nonprofit status, cementing the event's independence and ensuring the mission endures for generations to come.</span></div></div>
@@ -849,109 +948,6 @@
     </div>
   </div>
 </div>
-
-<!-- SPONSORS -->
-<section class="sponsors" id="sponsors">
-  <div class="container">
-    <div class="sponsors-header">
-      <div class="section-label">Thank You to Our Sponsors</div>
-      <h2 class="section-title">Our <em>Community Partners</em></h2>
-      <div class="divider"></div>
-      <p class="section-subtitle centered">The businesses below made Community Day 2025 possible. We are grateful for their extraordinary generosity and look forward to welcoming our 2026 partners in the months ahead.</p>
-    </div>
-    <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-leadership">⭐ Community Leadership</span><span class="tier-amount">$1,000+</span></div>
-      <div class="sponsors-list">
-        <span class="sponsor-name">Hentzelman</span><span class="sponsor-name">Maurer &amp; Scott</span><span class="sponsor-name">Xfinity</span>
-      </div>
-    </div>
-    <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-blue">🔵 Blue Ribbon</span><span class="tier-amount">$500</span></div>
-      <div class="sponsors-list">
-        <span class="sponsor-name">Astound</span><span class="sponsor-name">Christa Ward Realtor</span><span class="sponsor-name">Health Focus Partners</span><span class="sponsor-name">JP Mascaro</span><span class="sponsor-name">Lehigh Valley Health Network</span><span class="sponsor-name">Orthodontic Specialists</span><span class="sponsor-name">Pride Abstract</span><span class="sponsor-name">QNB</span><span class="sponsor-name">TW Cooper Insurance</span><span class="sponsor-name">Viper Martial Arts</span><span class="sponsor-name">WB Homes</span>
-      </div>
-    </div>
-    <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-community">🌿 Community Day</span><span class="tier-amount">$250</span></div>
-      <div class="sponsors-list">
-        <span class="sponsor-name">ACRE Windows &amp; Doors</span><span class="sponsor-name">All American Gutter Protection</span><span class="sponsor-name">Alvarez Orthodontics</span><span class="sponsor-name">Bright Horizons</span><span class="sponsor-name">Dance Works</span><span class="sponsor-name">Evans Counseling</span><span class="sponsor-name">Giant</span><span class="sponsor-name">Goddard Center Valley</span><span class="sponsor-name">McDonald's of Coopersburg</span><span class="sponsor-name">PA Shakespeare</span><span class="sponsor-name">Passanante's Home Food Service</span><span class="sponsor-name">Restoration Services</span><span class="sponsor-name">St. Luke's Physical Therapy</span><span class="sponsor-name">The Lesson Center</span><span class="sponsor-name">Zen Brazilian Jiu-Jitsu</span>
-      </div>
-    </div>
-    <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-general">General</span><span class="tier-amount">$100</span></div>
-      <div class="sponsors-list">
-        <span class="sponsor-name">Captain Bob's Fresh Seafood</span><span class="sponsor-name">Esteem Medical</span><span class="sponsor-name">Get in Touch Massage</span><span class="sponsor-name">Link's Beverage</span><span class="sponsor-name">Little Orchids</span><span class="sponsor-name">Madle's Hardware</span><span class="sponsor-name">McPhillips, CPA</span><span class="sponsor-name">Pool Pro</span>
-      </div>
-    </div>
-    <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-inkind">In-Kind</span></div>
-      <div class="sponsors-list">
-        <span class="sponsor-name">Coopersburg Construction</span><span class="sponsor-name">Corp/Digital Outdoor Display</span><span class="sponsor-name">Cornerstone Presbyterian Church</span><span class="sponsor-name">EBC Printing &amp; Signs</span><span class="sponsor-name">Full Moon Rentals</span><span class="sponsor-name">Hausman Fruit Farm</span><span class="sponsor-name">Krise Transportation</span><span class="sponsor-name">Move 'N Play</span><span class="sponsor-name">nnstudio</span><span class="sponsor-name">ORE Equipment Rental</span>
-      </div>
-    </div>
-    <div class="sponsor-cta">
-      <p>Become a 2026 Community Day Sponsor</p>
-      <div class="sub">Your support reaches 10,000+ neighbors across the Lehigh Valley. Four tiers starting at just $100.</div>
-      <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn btn-primary">Register Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- GET INVOLVED -->
-<section class="involved" id="involved">
-  <div class="container">
-    <div class="involved-header">
-      <div class="section-label">Our Community</div>
-      <h2 class="section-title">Be Part of <em>Community Day</em></h2>
-      <div class="divider"></div>
-      <p class="section-subtitle centered">Four meaningful ways to participate. Registration deadline is August 15, 2026.</p>
-    </div>
-    <div class="involved-grid">
-      <div class="involved-card nonprofit">
-        <div class="card-icon">🏘️</div>
-        <h3 class="card-title">Nonprofit &amp; Community Organizations</h3>
-        <p class="card-desc">CCD is one of the Lehigh Valley's best fundraising opportunities for local nonprofits, churches, and community groups. Over 60 organizations participate each year, with direct access to 10,000+ neighbors.</p>
-        <div class="card-fee">
-          <strong>Fundraising space:</strong> $35 per 10'×10' space<br>
-          <strong>Non-fundraising (demo/exhibit only):</strong> First space free; $35 each additional
-        </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card sage">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
-      </div>
-      <div class="involved-card sponsor">
-        <div class="card-icon">🤝</div>
-        <h3 class="card-title">Become a Corporate Sponsor</h3>
-        <p class="card-desc">Your sponsorship makes Community Day possible and puts your business in front of 10,000+ attendees from across the Lehigh Valley. Four tiers from General Sponsor to Community Leadership.</p>
-        <div class="card-fee">
-          <strong>Community Leadership:</strong> $1,000+ &nbsp;|&nbsp; <strong>Blue Ribbon:</strong> $500<br>
-          <strong>Community Day:</strong> $250 &nbsp;|&nbsp; <strong>General:</strong> $100
-        </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
-      </div>
-      <div class="involved-card sponsor" style="border-color:var(--sand)">
-        <div class="card-icon">🎨</div>
-        <h3 class="card-title">Craft Vendors</h3>
-        <p class="card-desc">Showcase your handmade and artisan goods to 10,000+ attendees from across the Lehigh Valley. One of the region's best single-day markets for independent makers.</p>
-        <div class="card-fee">
-          <strong>Craft Vendor space:</strong> $35 per 10'×10' space
-        </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
-      </div>
-      <div class="involved-card volunteer">
-        <div class="card-icon">🙋</div>
-        <h3 class="card-title">Volunteer</h3>
-        <p class="card-desc">Sponsors fund it, but volunteers make it happen. Whether you can give a few hours or the whole day, every hand matters. No experience necessary, just a passion for community.</p>
-        <div class="card-fee">
-          <strong>Contact:</strong> Ben Craig · 215-892-0725<br>
-          <a href="mailto:volunteer@CoopersburgCommunityDay.org">volunteer@CoopersburgCommunityDay.org</a>
-        </div>
-        <a href="mailto:volunteer@CoopersburgCommunityDay.org" class="btn-card rust">Sign Up to Volunteer →</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
