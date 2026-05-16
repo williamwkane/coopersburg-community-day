@@ -58,7 +58,7 @@
       "@type": "NonProfit",
       "name": "Coopersburg Community Day",
       "url": "https://www.coopersburgcommunityday.org",
-      "email": "Event@CoopersburgCommunityDay.org",
+      "email": "event@coopersburgcommunityday.org",
       "address": {
         "@type": "PostalAddress",
         "postOfficeBoxNumber": "P.O. Box 70",
@@ -73,7 +73,8 @@
     "keywords": "community festival, free event, Coopersburg PA, Lehigh Valley, craft fair, nonprofit fundraiser, live music, car show"
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#3a5550" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -106,6 +107,9 @@
       --radius: 3px;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    .skip-nav{position:absolute;top:-100px;left:0;background:var(--teal-dark);color:var(--cream);padding:8px 16px;font-family:var(--font-ui);font-size:.85rem;z-index:9999;transition:top .2s}
+    .skip-nav:focus{top:0}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
     html{scroll-behavior:smooth}
     body{background:var(--cream);color:var(--walnut);font-family:var(--font-body);font-size:18px;line-height:1.7;overflow-x:hidden}
     img{display:block;max-width:100%}
@@ -401,6 +405,7 @@
 </head>
 <body>
 
+<a href="#about" class="skip-nav">Skip to main content</a>
 <div class="announce"><p>📅 Coopersburg Community Day is <strong>Saturday, September 19, 2026</strong> — and registration is now open! Vendors, sponsors &amp; nonprofits: <a href="#involved" style="color:var(--gold-light);text-decoration:underline;">sign up today →</a></p></div>
 
 <nav>
@@ -437,16 +442,17 @@
 
 <!-- HERO -->
 <header class="hero" id="home">
-  <video class="hero-video" id="hero-vid-1" autoplay muted playsinline poster="media/hero-poster.jpg" style="transition:opacity 1.5s ease;opacity:1">
+  <video class="hero-video" id="hero-vid-1" autoplay muted playsinline poster="media/hero-poster.jpg" aria-label="Coopersburg Community Day festival highlights" role="img" style="transition:opacity 1.5s ease;opacity:1">
     <source src="media/drone2.webm" type="video/webm" />
     <source src="media/drone2.mp4" type="video/mp4" />
   </video>
-  <video class="hero-video" id="hero-vid-2" muted playsinline style="transition:opacity 1.5s ease;opacity:0">
+  <video class="hero-video" id="hero-vid-2" muted playsinline aria-label="Coopersburg Community Day festival highlights" role="img" style="transition:opacity 1.5s ease;opacity:0">
     <source src="media/drone1.mp4" type="video/mp4" />
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <img src="media/CCD_Logo-Full_Brand.png" alt="Coopersburg Community Day" class="hero-brand-logo">
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Coopersburg Community Day 2026 — Free Annual Festival, Coopersburg PA</h1>
     <p class="hero-tagline">Coopersburg's Annual Celebration of "Small Town America"</p>
     <div class="hero-rule"></div>
     <div class="hero-meta">
@@ -1034,7 +1040,7 @@
       <a href="https://www.facebook.com/coopersburgcommunityday" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/coopersburgcommunityday/" target="_blank">Instagram</a>
       <a href="https://www.coopersburghistoricalsociety.org/" target="_blank" rel="noopener">Coopersburg Historical Society</a>
-      <a href="http://www.coopersburgborough.org/" target="_blank" rel="noopener">Borough of Coopersburg</a>
+      <a href="https://www.coopersburgborough.org/" target="_blank" rel="noopener">Borough of Coopersburg</a>
     </div>
     <div class="footer-credit">
       Coopersburg Community Day is an independent 501(c)(3) nonprofit organization &nbsp;·&nbsp;
