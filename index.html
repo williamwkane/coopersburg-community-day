@@ -209,6 +209,7 @@
     .gallery-item:hover .gallery-label{opacity:1}
     .gallery-row2{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin-top:4px;border-radius:var(--radius);overflow:hidden;height:180px}
     .gallery-row2 .gallery-item{height:180px}
+    .gallery-row2-extra{display:none}
     .gallery-caption{text-align:center;margin-top:14px;font-family:var(--font-ui);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,239,224,.35)}
 
     /* ── VALUES ── */
@@ -382,11 +383,11 @@
       .about-grid,.history-inner,.event-info-grid,.schedule-grid{grid-template-columns:1fr}
       .history-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px}
       .roots-inner{grid-template-columns:1fr;gap:16px;text-align:center}
-      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px;grid-auto-flow:dense}
+      .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px;grid-auto-flow:dense}
       .gallery-item.tall{grid-row:span 1}
       .gallery-row2{grid-template-columns:repeat(3,1fr);height:auto}
       .gallery-row2 .gallery-item{height:140px}
-      .gallery-row2 .gallery-item:nth-child(4),.gallery-row2 .gallery-item:nth-child(5){display:none}
+      .gallery-row2-extra{display:block}
       .kids-grid{grid-template-columns:1fr}
     }
     @media(max-width:520px){
@@ -542,10 +543,6 @@
         <img src="media/photo_4037.jpg" alt="Live band performing under the entertainment tent at Coopersburg Community Day" />
         <div class="gallery-label">Live Entertainment All Day</div>
       </div>
-      <div class="gallery-item">
-        <img src="media/photo_4048.jpg" alt="Hausman Fruit Farm hay wagon ride at Coopersburg Community Day" />
-        <div class="gallery-label">Hausman Fruit Farm · Wagon Rides</div>
-      </div>
     </div>
     <div class="gallery-row2">
       <div class="gallery-item">
@@ -567,6 +564,10 @@
       <div class="gallery-item">
         <img src="media/drone1_thumb.jpg" alt="Drone view of kids activities" />
         <div class="gallery-label">Kids Activities All Day</div>
+      </div>
+      <div class="gallery-item gallery-row2-extra">
+        <img src="media/photo_4048.jpg" alt="Hausman Fruit Farm hay wagon ride at Coopersburg Community Day" />
+        <div class="gallery-label">Hausman Fruit Farm · Wagon Rides</div>
       </div>
     </div>
 
