@@ -285,6 +285,7 @@
     .schedule-item{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid rgba(245,239,224,.07)}
     .schedule-item:last-child{border-bottom:none}
     .schedule-time{font-family:var(--font-ui);font-size:.76rem;font-weight:600;color:var(--gold);letter-spacing:.06em;white-space:nowrap;padding-top:3px;min-width:85px}
+    .kids-schedule .schedule-time{min-width:108px}
     .schedule-event strong{display:block;font-family:var(--font-ui);font-size:.9rem;font-weight:600;color:var(--ivory)}
     .schedule-event span{font-size:.82rem;color:rgba(245,239,224,.52)}
     .kids-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
@@ -345,6 +346,7 @@
     .tier-community{background:var(--teal);color:var(--ivory)}
     .tier-inkind{background:#5a5a5a;color:#e0e0e0}
     .tier-general{background:var(--umber);color:#f0d8ba}
+    .tier-perks{background:#5a8a5a;color:#e8f2e8}
     .tier-amount{font-family:var(--font-ui);font-size:.7rem;color:var(--umber);opacity:.65}
     .sponsors-list{display:flex;flex-wrap:wrap;gap:8px}
     .sponsor-name{background:var(--ivory);border:1px solid rgba(79,115,110,.2);border-radius:var(--radius);padding:9px 18px;font-family:var(--font-ui);font-size:.86rem;color:var(--walnut);transition:border-color .2s,background .2s}
@@ -633,31 +635,47 @@
         </div>
         <div class="schedule-item">
           <div class="schedule-time">All Day</div>
-          <div class="schedule-event"><strong>Kids' Activities</strong><span>Free fun for the whole family</span></div>
+          <div class="schedule-event"><strong>Kids' Activities</strong><span>Bounce houses, dunk tank, petting zoo, bubbles, and more</span></div>
         </div>
         <div class="schedule-item">
           <div class="schedule-time">5:00 PM</div>
           <div class="schedule-event"><strong>Event Closes</strong><span>See you next year!</span></div>
         </div>
-
-        <div style="margin-top:28px;padding:20px 22px;background:rgba(206,176,111,.12);border:1px solid rgba(206,176,111,.3);border-radius:var(--radius);">
-          <p style="font-family:var(--font-ui);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:8px;">📣 Full Schedule Coming Soon</p>
-          <p style="font-size:.92rem;color:var(--cream);line-height:1.6;">Entertainment lineup, performer schedules, and activity details will be announced this summer. Follow us on <a href="https://www.facebook.com/coopersburgcommunityday" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline;">Facebook</a> and <a href="https://www.instagram.com/coopersburgcommunityday/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline;">Instagram</a> to be the first to know.</p>
-        </div>
       </div>
 
-      <!-- RIGHT: What to Expect + Park Map -->
+      <!-- RIGHT: Kids' Activities + Park Map -->
       <div>
-        <h3>What to Expect</h3>
-        <div class="kids-grid">
-          <div class="kids-item"><div class="k-icon">🎵</div><p>Live Music &amp; Entertainment</p></div>
-          <div class="kids-item"><div class="k-icon">🎨</div><p>75+ Craft Vendors</p></div>
-          <div class="kids-item"><div class="k-icon">🏛️</div><p>60+ Nonprofit Organizations</p></div>
-          <div class="kids-item"><div class="k-icon">🚗</div><p>Classic &amp; Antique Car Show</p></div>
-          <div class="kids-item"><div class="k-icon">🎪</div><p>Strolling Performers</p></div>
-          <div class="kids-item"><div class="k-icon">🧒</div><p>Free Kids' Activities</p></div>
-          <div class="kids-item"><div class="k-icon">🍖</div><p>Food Trucks &amp; Community Favorites</p></div>
-          <div class="kids-item"><div class="k-icon">🅿️</div><p>Free Parking &amp; Shuttle</p></div>
+        <h3>Kids' Activities</h3>
+        <p style="font-size:.92rem;color:var(--cream);line-height:1.6;margin-top:10px;margin-bottom:8px">Booked and ready for September 19. All free, all day.</p>
+        <div class="kids-schedule">
+        <div class="schedule-item">
+          <div class="schedule-time">10 AM – 4 PM</div>
+          <div class="schedule-event"><strong><a href="https://www.letsbouncearoundrentals.com/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">Bounce Houses</a></strong><span>Two houses running all day, from Let's Bounce Around Rentals</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">10 AM – 12 PM</div>
+          <div class="schedule-event"><strong><a href="https://www.azooforyou.net" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">A Zoo for You</a></strong><span>Traveling petting zoo, right here from Coopersburg</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11 AM – 3 PM</div>
+          <div class="schedule-event"><strong><a href="http://enchantedencounterspa.com/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">Enchanted Encounters</a></strong><span>Costumed characters roaming the park</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11 AM – 3 PM</div>
+          <div class="schedule-event"><strong><a href="https://www.letsbouncearoundrentals.com/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">Dunk Tank</a></strong><span>Donated by Let's Bounce Around Rentals</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">11 AM – 3 PM</div>
+          <div class="schedule-event"><strong>Local Performance Showcase</strong><span>Short sets from local groups throughout the afternoon</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">12 – 2 PM</div>
+          <div class="schedule-event"><strong><a href="https://www.georgethemagician.org/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">Bubble Extraordinaire</a></strong><span>Two bubble shows, ten hands-on stations, and magic in between</span></div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">2 – 3 PM</div>
+          <div class="schedule-event"><strong><a href="https://www.gowithyoyo.com/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">GO with YOYO</a></strong><span>An interactive kids fitness show packed with music, movement, and games</span></div>
+        </div>
         </div>
 
         <h3 style="margin-top:32px">Park Map</h3>
@@ -782,36 +800,36 @@
       <div class="section-label">Thank You to Our Sponsors</div>
       <h2 class="section-title">Our <em>Community Partners</em></h2>
       <div class="divider"></div>
-      <p class="section-subtitle centered">The businesses below made Community Day 2025 possible. We are grateful for their extraordinary generosity and look forward to welcoming our 2026 partners in the months ahead.</p>
+      <p class="section-subtitle centered">The businesses below are making Community Day 2026 possible. We are grateful for their extraordinary generosity, and there is still room to join them.</p>
     </div>
     <div class="sponsor-tier">
       <div class="tier-label"><span class="tier-badge tier-leadership">⭐ Community Leadership</span><span class="tier-amount">$1,000+</span></div>
       <div class="sponsors-list">
-        <span class="sponsor-name">Heintzelman</span><span class="sponsor-name">Lutron</span><span class="sponsor-name">Maurer &amp; Scott</span><span class="sponsor-name">Creekview Veterinary Hospital</span><span class="sponsor-name">Xfinity</span>
+        <span class="sponsor-name">Heintzelman Funeral Home</span><span class="sponsor-name">Maurer &amp; Scott Sales</span><span class="sponsor-name">W.B. Homes</span><span class="sponsor-name">Xfinity</span>
       </div>
     </div>
     <div class="sponsor-tier">
       <div class="tier-label"><span class="tier-badge tier-blue" style="white-space:nowrap">🔵 Blue Ribbon</span><span class="tier-amount">$500</span></div>
       <div class="sponsors-list">
-        <span class="sponsor-name">Astound</span><span class="sponsor-name">Christa Ward Realtor</span><span class="sponsor-name">Health Focus Partners</span><span class="sponsor-name">JP Mascaro</span><span class="sponsor-name">Lehigh Valley Health Network</span><span class="sponsor-name">Orthodontic Specialists</span><span class="sponsor-name">Pride Abstract</span><span class="sponsor-name">QNB</span><span class="sponsor-name">TW Cooper Insurance</span><span class="sponsor-name">Viper Martial Arts</span><span class="sponsor-name">WB Homes</span>
+        <span class="sponsor-name">J.P. Mascaro &amp; Sons</span><span class="sponsor-name">Pride Abstract &amp; Settlement Services</span><span class="sponsor-name">Restoration Services of the Lehigh Valley</span><span class="sponsor-name">TW Cooper Insurance</span>
       </div>
     </div>
     <div class="sponsor-tier">
       <div class="tier-label"><span class="tier-badge tier-community">🌿 Community Day</span><span class="tier-amount">$250</span></div>
       <div class="sponsors-list">
-        <span class="sponsor-name">ACRE Windows &amp; Doors</span><span class="sponsor-name">All American Gutter Protection</span><span class="sponsor-name">Alvarez Orthodontics</span><span class="sponsor-name">Bright Horizons</span><span class="sponsor-name">Dance Works</span><span class="sponsor-name">Evans Counseling</span><span class="sponsor-name">Giant</span><span class="sponsor-name">Goddard Center Valley</span><span class="sponsor-name">McDonald's of Coopersburg</span><span class="sponsor-name">PA Shakespeare</span><span class="sponsor-name">Passanante's Home Food Service</span><span class="sponsor-name">Restoration Services</span><span class="sponsor-name">St. Luke's Physical Therapy</span><span class="sponsor-name">The Lesson Center</span><span class="sponsor-name">Zen Brazilian Jiu-Jitsu</span>
+        <span class="sponsor-name">Calvary Bible Fellowship Church</span><span class="sponsor-name">Christa Ward Real Estate</span><span class="sponsor-name">Empowered Students</span><span class="sponsor-name">Goddard School Center Valley</span><span class="sponsor-name">Gross McGinley, LLP</span><span class="sponsor-name">Madle's Ace Hardware &amp; Mowers</span><span class="sponsor-name">PA Shakespeare Festival</span><span class="sponsor-name">Passanante's Home Food Services</span><span class="sponsor-name">St. Luke's Hospital</span><span class="sponsor-name">Walter Investment Partners</span>
       </div>
     </div>
     <div class="sponsor-tier">
-      <div class="tier-label"><span class="tier-badge tier-general">General</span><span class="tier-amount">$100</span></div>
+      <div class="tier-label"><span class="tier-badge tier-perks">🤝 Community Perks</span><span class="tier-amount">$100</span></div>
       <div class="sponsors-list">
-        <span class="sponsor-name">Captain Bob's Fresh Seafood</span><span class="sponsor-name">Esteem Medical</span><span class="sponsor-name">Get in Touch Massage</span><span class="sponsor-name">Link's Beverage</span><span class="sponsor-name">Little Orchids</span><span class="sponsor-name">Madle's Hardware</span><span class="sponsor-name">McPhillips, CPA</span><span class="sponsor-name">Pool Pro</span>
+        <span class="sponsor-name">Action Karate</span>
       </div>
     </div>
     <div class="sponsor-tier">
       <div class="tier-label"><span class="tier-badge tier-inkind">In-Kind</span></div>
       <div class="sponsors-list">
-        <span class="sponsor-name">Coopersburg Construction</span><span class="sponsor-name">Corp/Digital Outdoor Display</span><span class="sponsor-name">Cornerstone Presbyterian Church</span><span class="sponsor-name">EBC Printing &amp; Signs</span><span class="sponsor-name">Full Moon Rentals</span><span class="sponsor-name">Hausman Fruit Farm</span><span class="sponsor-name">Krise Transportation</span><span class="sponsor-name">Move 'N Play</span><span class="sponsor-name">nnstudio</span><span class="sponsor-name">ORE Equipment Rental</span>
+        <span class="sponsor-name">Coopersburg Construction</span><span class="sponsor-name">Corp/Digital Outdoor Display</span><span class="sponsor-name">Cornerstone Presbyterian Church</span><span class="sponsor-name">EBC Printing &amp; Signs</span><span class="sponsor-name">Full Moon Rentals</span><span class="sponsor-name">Hausman Fruit Farm</span><span class="sponsor-name">Krise Transportation</span><span class="sponsor-name">Let's Bounce Around Rentals</span><span class="sponsor-name">Move 'N Play</span><span class="sponsor-name">nnstudio</span><span class="sponsor-name">ORE Equipment Rental</span>
       </div>
     </div>
     <div class="sponsor-cta">
@@ -884,7 +902,8 @@
         <div class="card-fee">
           <strong>Community Perks Program:</strong> $100
         </div>
-        <p class="zeffy-note">More info to come soon!</p>
+        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card gold">Register Now →</a>
+        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
       </div>
       <div class="involved-card volunteer">
         <div class="card-icon">🙋</div>
