@@ -365,6 +365,10 @@
     .info-block ul{list-style:none}
     .info-block ul li{padding:3px 0}
     .info-block ul li::before{content:'→ ';color:var(--teal);font-size:.82rem}
+    .park-map-frame{border:3px solid var(--gold);border-radius:var(--radius);overflow:hidden}
+    .park-map-frame img{width:100%;height:auto;display:block}
+    .strolling-list.legend-light li{color:var(--ink);border-bottom:1px solid rgba(58,85,80,.14)}
+    .strolling-list.legend-light .s-time{color:var(--gold-dark)}
     .map-embed{border:3px solid var(--gold);border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9}
     .map-embed iframe{width:100%;height:100%;border:none}
     .map-caption{font-family:var(--font-ui);font-size:.74rem;color:var(--umber);margin-top:8px;text-align:center;opacity:.75}
@@ -643,7 +647,7 @@
         </div>
       </div>
 
-      <!-- RIGHT: Kids' Activities + Park Map -->
+      <!-- RIGHT: Kids' Activities -->
       <div>
         <h3>Kids' Activities</h3>
         <p style="font-size:.92rem;color:var(--cream);line-height:1.6;margin-top:10px;margin-bottom:8px">Booked and ready for September 19. All free, all day.</p>
@@ -677,19 +681,6 @@
           <div class="schedule-event"><strong><a href="https://www.gowithyoyo.com/" target="_blank" rel="noopener" style="color:var(--gold-light);text-decoration:underline">GO with YOYO</a></strong><span>An interactive kids fitness show packed with music, movement, and games</span></div>
         </div>
         </div>
-
-        <h3 style="margin-top:32px">Park Map</h3>
-        <div style="margin-top:12px;border-radius:4px;overflow:hidden;border:1px solid rgba(200,146,42,.3);aspect-ratio:unset;height:auto;position:relative;z-index:1">
-          <img src="media/park-map.png" alt="Coopersburg Community Day park map" style="width:100%;height:auto;display:block;max-height:none" />
-        </div>
-        <ul class="strolling-list" style="margin-top:16px">
-          <li><span>① Main Entertainment Tent</span><span class="s-time">Stage &amp; seating</span></li>
-          <li><span>② Craft Alley</span><span class="s-time">Artisans &amp; vendors</span></li>
-          <li><span>③ Custom Bikes &amp; Fire Co.</span><span class="s-time">E. Landis St. entrance</span></li>
-          <li><span>④ Historical Society Tent</span><span class="s-time">All day</span></li>
-          <li><span>⑤ Classic &amp; Antique Cars</span><span class="s-time">All day</span></li>
-          <li><span>⑥ Helicopter Display</span><span class="s-time">Special appearance</span></li>
-        </ul>
       </div>
 
     </div>
@@ -763,7 +754,7 @@
         </div>
         <div class="info-block">
           <h3><span>📍</span> Location</h3>
-          <p>Southern Lehigh Living Memorial Community Park<br>East Fairmount Street &amp; Route 309, Coopersburg, PA 18036</p>
+          <p>Southern Lehigh Living Memorial Community Park<br>East Fairmount Street &amp; Route 309, Coopersburg, PA 18036<br><a href="https://maps.google.com/maps?q=215+E+Fairmount+St,+Coopersburg,+PA+18036" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline">Get directions</a></p>
         </div>
         <div class="info-block">
           <h3><span>🚗</span> Parking &amp; Shuttles</h3>
@@ -784,10 +775,17 @@
         </div>
       </div>
       <div>
-        <div class="map-embed">
-          <iframe loading="lazy" src="https://maps.google.com/maps?q=215+E+Fairmount+St,+Coopersburg,+PA+18036&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="Southern Lehigh Living Memorial Community Park"></iframe>
+        <div class="park-map-frame">
+          <img src="media/park-map.png" alt="Coopersburg Community Day park map showing entertainment tent, craft alley, car show, and parking" loading="lazy" />
         </div>
-        <p class="map-caption">Southern Lehigh Living Memorial Community Park · E. Fairmount St &amp; Rte. 309, Coopersburg, PA</p>
+        <ul class="strolling-list legend-light">
+          <li><span>① Main Entertainment Tent</span><span class="s-time">Stage &amp; seating</span></li>
+          <li><span>② Craft Alley</span><span class="s-time">Artisans &amp; vendors</span></li>
+          <li><span>③ Custom Bikes &amp; Fire Co.</span><span class="s-time">E. Landis St. entrance</span></li>
+          <li><span>④ Historical Society Tent</span><span class="s-time">All day</span></li>
+          <li><span>⑤ Classic &amp; Antique Cars</span><span class="s-time">All day</span></li>
+          <li><span>⑥ Helicopter Display</span><span class="s-time">Special appearance</span></li>
+        </ul>
       </div>
     </div>
   </div>
