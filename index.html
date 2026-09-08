@@ -331,6 +331,11 @@
     .btn-card.gold{border-color:var(--gold-dark);color:var(--gold-dark)}
     .btn-card.gold:hover{background:var(--gold);color:var(--walnut)}
     .btn-card.rust{border-color:var(--rust);color:var(--rust)}
+    .full-banner{max-width:760px;margin:24px auto 0;padding:22px 26px;background:rgba(90,138,90,.1);border:1px solid rgba(90,138,90,.35);border-radius:var(--radius);text-align:center}
+    .full-banner-title{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--teal-dark);margin-bottom:8px}
+    .full-banner-text{font-size:.95rem;color:var(--ink);line-height:1.65;opacity:.85}
+    .full-banner-text a{color:var(--teal);text-decoration:underline}
+    .card-status{display:inline-block;font-family:var(--font-ui);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:11px 20px;border-radius:var(--radius);background:rgba(58,85,80,.07);color:var(--teal-dark);border:1px dashed rgba(58,85,80,.35);opacity:.9}
     .zeffy-note{font-family:var(--font-body);font-style:italic;font-size:.75rem;color:var(--umber);opacity:.7;margin-top:10px;line-height:1.5}
 
     /* ── SPONSORS ── */
@@ -435,7 +440,7 @@
 <body>
 
 <a href="#about" class="skip-nav">Skip to main content</a>
-<div class="announce"><p>📅 Coopersburg Community Day is <strong>Saturday, September 19, 2026</strong> — and registration is now open! Vendors, sponsors &amp; nonprofits: <a href="#involved" style="color:var(--gold-light);text-decoration:underline;">sign up today →</a></p></div>
+<div class="announce"><p>🎉 We're <strong>FULL</strong> for 2026! Every vendor space is spoken for. Join us <strong>Saturday, September 19</strong> at the park: <a href="#schedule" style="color:var(--gold-light);text-decoration:underline;">see the lineup →</a></p></div>
 
 <nav>
   <div class="nav-inner">
@@ -451,7 +456,7 @@
       <li><a href="#involved">Get Involved</a></li>
       <li><a href="#history">History</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#involved" class="nav-cta">Register</a></li>
+      <li><a href="#schedule" class="nav-cta">See the Lineup</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -495,8 +500,8 @@
       <span class="hero-badge">✓ Free Entertainment</span>
     </div>
     <div class="hero-ctas">
-      <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn btn-primary">Register Your Organization</a>
-      <a href="#schedule" class="btn btn-outline">See the Schedule</a>
+      <a href="#schedule" class="btn btn-primary">See the Lineup</a>
+      <a href="#visit" class="btn btn-outline">Plan Your Visit</a>
     </div>
   </div>
   <div class="hero-social">
@@ -794,7 +799,7 @@
       </div>
       <div>
         <div class="park-map-frame">
-          <img src="media/park-map-2026.jpg" alt="Coopersburg Community Day 2026 park map showing the main tent, craft alley, car show, food trucks, restrooms, and free parking shuttle" loading="lazy" />
+          <img src="media/park-map-2026-v2.jpg" alt="Coopersburg Community Day 2026 park map showing the main tent, craft alley, car show, food trucks, restrooms, and free parking shuttle" loading="lazy" />
         </div>
         <ul class="strolling-list legend-light">
           <li><span>① Main Entertainment Tent</span><span class="s-time">Stage &amp; seating</span></li>
@@ -849,9 +854,9 @@
       </div>
     </div>
     <div class="sponsor-cta">
-      <p>Become a 2026 Community Day Sponsor</p>
-      <div class="sub">Your support reaches 10,000+ neighbors across the Lehigh Valley. Four tiers starting at just $100, including our new Community Perks Program.</div>
-      <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn btn-primary">Register Now</a>
+      <p>Thinking Ahead to 2027?</p>
+      <div class="sub">Sponsorships for 2026 are closed and every tier filled. Thank you to the businesses that made this year possible. If you would like to join them next year, send us a note and we will reach out when registration opens in the spring.</div>
+      <a href="mailto:corpsponsors@coopersburgcommunityday.org" class="btn btn-primary">Email Us About 2027</a>
     </div>
   </div>
 </section>
@@ -863,7 +868,13 @@
       <div class="section-label">Get Involved</div>
       <h2 class="section-title">Be Part of <em>Community Day</em></h2>
       <div class="divider"></div>
-      <p class="section-subtitle centered">Six meaningful ways to participate. Registration deadline is August 31, 2026.</p>
+      <p class="section-subtitle centered">Registration for 2026 is closed. Here is what the day is built from, and how to join us next year.</p>
+
+      <div class="full-banner">
+        <p class="full-banner-title">🎉 We Are Full for 2026</p>
+        <p class="full-banner-text">Every craft vendor, nonprofit, sponsor, and food truck space has been claimed. The park is going to be packed on September 19. Thank you to everyone who signed up, and to the neighbors who keep making this the day it is.</p>
+        <p class="full-banner-text" style="margin-top:10px">Registration for 2027 opens next spring. Follow us on <a href="https://www.facebook.com/coopersburgcommunityday" target="_blank" rel="noopener">Facebook</a> or <a href="https://www.instagram.com/coopersburgcommunityday/" target="_blank" rel="noopener">Instagram</a> and you will be the first to know.</p>
+      </div>
     </div>
     <div class="involved-grid">
       <div class="involved-card nonprofit">
@@ -874,8 +885,7 @@
           <strong>Fundraising space:</strong> $35 per 10'×10' space<br>
           <strong>Non-fundraising (demo/exhibit only):</strong> First space free; $35 each additional
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card sage">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+        <div class="card-status">Full for 2026</div>
       </div>
       <div class="involved-card sponsor">
         <div class="card-icon">🤝</div>
@@ -886,8 +896,7 @@
           <strong style="white-space:nowrap">Blue Ribbon:</strong> $500<br>
           <strong>Community Day:</strong> $250
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+        <div class="card-status">Full for 2026</div>
       </div>
       <div class="involved-card sponsor" style="border-color:var(--sand)">
         <div class="card-icon">🎨</div>
@@ -896,8 +905,7 @@
         <div class="card-fee">
           <strong>Craft Vendor space:</strong> $35 per 10'×10' space
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+        <div class="card-status">Full for 2026</div>
       </div>
       <div class="involved-card sponsor" style="border-color:var(--sand)">
         <div class="card-icon">🚚</div>
@@ -907,8 +915,7 @@
           <strong>Registration:</strong> Free &nbsp;·&nbsp; Approval by Event Chair required<br>
           <strong>Requires:</strong> Certificate of Insurance naming CCD as additionally insured
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+        <div class="card-status">Full for 2026</div>
       </div>
       <div class="involved-card perks">
         <div class="card-icon">🏷️</div>
@@ -918,8 +925,7 @@
         <div class="card-fee">
           <strong>Community Perks Program:</strong> $100
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card gold">Register Now →</a>
-        <p class="zeffy-note">Zeffy may invite you to leave an optional tip to support their free platform for nonprofits — this is always your choice.</p>
+        <div class="card-status">Full for 2026</div>
       </div>
       <div class="involved-card volunteer">
         <div class="card-icon">🙋</div>
@@ -928,7 +934,7 @@
         <div class="card-fee">
           <strong>Contact:</strong> Ben Craig · 215-892-0725
         </div>
-        <a zeffy-form-link="https://www.zeffy.com/embed/ticketing/coopersburg-community-day--2026-2?modal=true" class="btn-card rust">Sign Up to Volunteer →</a>
+        <a href="tel:+12158920725" class="btn-card rust">Call Ben to Volunteer →</a>
       </div>
     </div>
   </div>
